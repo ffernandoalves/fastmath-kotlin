@@ -1,16 +1,6 @@
 #include "fastmath.hpp"
 #include <cmath>
 
-EXPORT double compute_heavy(double x) {
-    return sin(x) * cos(x) + sqrt(x);
-}
-
-//typedef struct Matrix {
-//    int row;
-//    int col;
-//    double **n;
-//} Matrix;
-
 void alloc_matrix_double(double ***mat, size_t row, size_t col) {
     *mat = (double **)malloc(sizeof(double *) * row);
     for (size_t i = 0; i < row; ++i) {

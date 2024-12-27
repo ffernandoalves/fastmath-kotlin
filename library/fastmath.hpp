@@ -20,7 +20,6 @@ struct Matrix {
     double** n;
 };
 
-EXPORT double compute_heavy(double x);
 EXPORT void Matrix_alloc(Matrix *mat);
 EXPORT void Matrix_free(Matrix *mat);
 EXPORT Matrix* multiplyMatrices(Matrix* a, Matrix* b);
